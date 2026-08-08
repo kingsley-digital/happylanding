@@ -5,19 +5,63 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light">
 <meta name="supported-color-schemes" content="light">
-<title>Happy Landing — Premium Baby Equipment Hire, Perth</title>
-<meta name="description" content="Boutique soft play &amp; ball pit hire and premium baby travel gear hire in Perth. Warm pastel styling for first and second birthdays, garden parties and marquee events.">
+<title>Soft Play &amp; Ball Pit Hire Perth | Happy Landing</title>
+<meta name="description" content="Boutique soft play and ball pit hire in Perth. A 4m x 4m set in warm pastels, sized for first and second birthdays, garden parties and marquee events. Pickup or delivery.">
 
 <!-- Social sharing (Facebook/Instagram link previews) -->
-<meta property="og:title" content="Happy Landing — Premium Baby Equipment Hire, Perth">
-<meta property="og:description" content="Boutique soft play &amp; ball pit hire and premium baby travel gear hire in Perth.">
+<meta property="og:title" content="Soft Play &amp; Ball Pit Hire Perth | Happy Landing">
+<meta property="og:description" content="Boutique soft play and ball pit hire in Perth — a 4m x 4m set in warm pastels for first and second birthdays.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_AU">
-<meta property="og:image" content="social-share.jpg">
+<meta property="og:image" content="https://happylanding.au/social-share.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:url" content="https://happylanding.au/">
+<meta property="og:site_name" content="Happy Landing">
 <meta name="twitter:card" content="summary_large_image">
-<!-- TODO: once your domain is live, change og:image to the full URL (https://yourdomain/weston-kingsley.jpg) and add og:url -->
+<link rel="canonical" href="https://happylanding.au/">
+<meta name="robots" content="index, follow">
+<meta name="geo.region" content="AU-WA">
+<meta name="geo.placename" content="Perth">
+
+<!-- Local business structured data — this is what feeds Google's local results -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://happylanding.au/#business",
+  "name": "Happy Landing",
+  "description": "Boutique soft play and ball pit hire for families in Perth, Western Australia. A 4m x 4m set in warm pastels for first and second birthdays, garden parties and marquee events.",
+  "url": "https://happylanding.au/",
+  "email": "hello@happylanding.au",
+  "image": "https://happylanding.au/social-share.jpg",
+  "priceRange": "$$",
+  "areaServed": {
+    "@type": "City",
+    "name": "Perth",
+    "containedInPlace": {
+      "@type": "State",
+      "name": "Western Australia"
+    }
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Perth",
+    "addressRegion": "WA",
+    "addressCountry": "AU"
+  },
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Soft Play and Ball Pit Hire",
+        "description": "A 4m x 4m soft play and ball pit set in warm pastels, for first and second birthdays, garden parties and marquee events in Perth."
+      }
+    }
+  ]
+}
+</script>
 
 <!-- Inline favicon so the browser doesn't 404 -->
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23FDF8F3'/><circle cx='11' cy='19' r='7' fill='%23F0C9BE'/><circle cx='21' cy='13' r='6' fill='%23B5654A'/></svg>">">
@@ -237,16 +281,6 @@
   .section-head h2{font-size:clamp(1.9rem, 3.2vw, 2.6rem); margin-top:0.6rem;}
   .section-head p{color:var(--ink-soft); margin-top:0.8rem; max-width:560px; line-height:1.6;}
 
-  .travel-visual{
-    margin-top:2.5rem; border-radius:var(--radius-lg); overflow:hidden;
-    box-shadow:0 18px 40px -26px rgba(74,64,58,0.25);
-    background:var(--bone-deep); aspect-ratio:21/9;
-  }
-  .travel-visual img{
-    width:100%; height:100%; object-fit:cover; object-position:center 62%;
-    display:block;
-  }
-  @media (max-width:700px){ .travel-visual{aspect-ratio:16/10;} }
 
   /* ---------- GALLERY ---------- */
   .gallery{
@@ -361,7 +395,7 @@
 <noscript>
   <div style="background:#2B2926; color:#FFFDF9; padding:1rem 6vw; font-size:0.9rem; text-align:center;">
     This site needs JavaScript to browse between pages. Please email
-    <a href="mailto:hello@happylanding.com.au" style="color:#E8C9C2; text-decoration:underline;">hello@happylanding.com.au</a>
+    <a href="mailto:hello@happylanding.au" style="color:#E8C9C2; text-decoration:underline;">hello@happylanding.au</a>
     and we'll help you directly.
   </div>
 </noscript>
@@ -371,7 +405,6 @@
   <div class="navlinks" id="navlinks">
     <button data-page="home" class="active">Home</button>
     <button data-page="softplay">Soft Play</button>
-    <button data-page="travel">Travel Gear</button>
     <button data-page="about">About</button>
     <button class="nav-cta" data-goto="enquire">Enquire</button>
   </div>
@@ -382,12 +415,12 @@
 <div class="page active" id="page-home">
   <section class="hero wide">
     <div>
-      <p class="eyebrow">Perth Metro · Premium Hire</p>
+      <p class="eyebrow">Soft Play Hire · Perth</p>
       <h1>Party moments,<br><em>styled</em> to remember.</h1>
-      <p class="lede">Boutique soft play and premium travel equipment hire for Perth families who want the details taken care of — from first birthdays to marquee celebrations, and journeys overseas.</p>
+      <p class="lede">Boutique soft play and ball pit hire for Perth families who want the details taken care of — first and second birthdays, garden parties and marquee celebrations.</p>
       <div class="hero-actions">
-        <button class="btn-primary" data-goto="softplay">View Soft Play Set</button>
-        <button class="btn-secondary" data-goto="travel">Travel Gear Hire</button>
+        <button class="btn-primary" data-goto="softplay">View the set</button>
+        <button class="btn-secondary" data-goto="enquire">Check your date</button>
       </div>
     </div>
     <div class="hero-visual">
@@ -399,28 +432,29 @@
        public liability policy is actually active — it's a factual claim customers rely on. -->
   <div class="trust-strip">
     <span>Family Run · Perth</span>
-    <span>Joolz · BabyBjörn · Kooshy Kids</span>
+    <span>Warm Pastel Styling</span>
     <span>Indoor · Outdoor · Marquee</span>
     <span>Pickup · Delivery Add-On</span>
   </div>
 
   <section class="wide">
     <div class="section-head">
-      <p class="eyebrow">What we offer</p>
-      <h2>Two ways we help.</h2>
+      <p class="eyebrow">What we do</p>
+      <h2>One set, beautifully done.</h2>
+      <p>We hire a single 4m × 4m soft play and ball pit set in warm pastels — kept immaculate, and sized right for the age it's actually for.</p>
     </div>
     <div class="offer-grid">
       <div class="offer-card" role="link" tabindex="0" data-goto="softplay">
         <p class="num">01</p>
-        <h3>Soft Play &amp; Ball Pit</h3>
-        <p>A single, beautifully presented 4×4m set in soft warm pastels — sized right for first and second birthdays, and equally at home under a marquee.</p>
+        <h3>First &amp; Second Birthdays</h3>
+        <p>A generous ball pit plus soft climbing and crawling pieces, scaled for one and two year olds rather than older kids.</p>
         <p class="go">Explore the set →</p>
       </div>
-      <div class="offer-card" role="link" tabindex="0" data-goto="travel">
+      <div class="offer-card" role="link" tabindex="0" data-goto="softplay">
         <p class="num">02</p>
-        <h3>Travel Gear for Overseas Trips</h3>
-        <p>Joolz Aer+, BabyBjörn travel cot and Kooshy Kids Sky Bunk — premium-brand equipment hired by the week, so you fly light.</p>
-        <p class="go">See weekly rates →</p>
+        <h3>Garden &amp; Marquee Events</h3>
+        <p>Styled to suit a lounge room or a marquee, with ground protection included for outdoor bookings.</p>
+        <p class="go">See the details →</p>
       </div>
     </div>
   </section>
@@ -482,32 +516,6 @@
   </section>
 </div>
 
-<!-- ============ TRAVEL GEAR ============ -->
-<div class="page" id="page-travel">
-  <section class="wide">
-    <p class="eyebrow">Travel Gear Hire</p>
-    <h2 style="font-size:clamp(2.2rem,4vw,3.2rem); margin-top:0.6rem;">Fly light. <em style="font-style:italic;color:var(--rose-deep)">Land settled.</em></h2>
-    <p style="color:var(--ink-soft); max-width:560px; margin-top:1rem; line-height:1.6;">Genuine premium-brand baby travel equipment, hired by the week — so your family doesn't check a pram through an airport or sleep in gear that isn't quite right.</p>
-
-    <div class="travel-visual">
-      <img src="travel-gear.jpg" alt="A folded stroller and travel cot in a sunlit room" loading="lazy">
-    </div>
-
-    <table class="price-table">
-      <tr><th scope="col">Item</th><th scope="col">Weekly Rate</th><th scope="col">Bond</th></tr>
-      <tr><td>Joolz Aer+ Stroller <span class="badge" style="background:var(--ink);">Fan favourite</span></td><td class="price">TBA</td><td>TBA</td></tr>
-      <tr><td>BabyBjörn Travel Cot</td><td class="price">TBA</td><td>TBA</td></tr>
-      <tr><td>Kooshy Kids Sky Bunk</td><td class="price">TBA</td><td>TBA</td></tr>
-      <tr><td><strong>Full Bundle</strong> <span class="badge">Best value</span></td><td class="price">TBA</td><td>TBA</td></tr>
-    </table>
-    <p style="font-size:0.88rem; color:var(--ink-soft); margin-top:-0.5rem;">Rates are being finalised — get in touch and we'll send you a quote for your travel dates. Pickup only, self-collected within a set window.</p>
-
-    <div style="margin-top:3rem;">
-      <button class="btn-primary" data-goto="enquire">Reserve for your trip</button>
-    </div>
-  </section>
-</div>
-
 <!-- ============ ABOUT ============ -->
 <div class="page" id="page-about">
   <section class="wide">
@@ -518,10 +526,10 @@
       <div>
         <p class="eyebrow">Our Story</p>
         <h2 style="margin-top:0.6rem;">A small, family-run hire — done properly.</h2>
-        <p style="color:var(--ink-soft); margin-top:1rem; line-height:1.7;">Happy Landing started with equipment we already trusted for our own family — and grew into a considered hire service for other Perth parents who want their child's celebration, or their overseas trip, to feel just as easy.</p>
-        <div class="value-row"><span class="mark">—</span><p>Fully insured, with a documented cleaning protocol between every hire.</p></div>
+        <p style="color:var(--ink-soft); margin-top:1rem; line-height:1.7;">Happy Landing started with equipment we already trusted for our own family — and grew into a considered hire service for other Perth parents who want their child's celebration to feel just as easy.</p>
+        <div class="value-row"><span class="mark">—</span><p>A documented cleaning protocol between every single hire.</p></div>
         <div class="value-row"><span class="mark">—</span><p>One soft play set, kept in excellent condition — not a large, hard-to-maintain fleet.</p></div>
-        <div class="value-row"><span class="mark">—</span><p>Genuine premium brands for travel hire: Joolz, BabyBjörn, Kooshy Kids.</p></div>
+        <div class="value-row"><span class="mark">—</span><p>Warm pastel styling, chosen to suit photographs as much as play.</p></div>
       </div>
     </div>
   </section>
@@ -535,19 +543,11 @@
     <p style="color:var(--ink-soft); margin-top:0.8rem; line-height:1.6;">Tell us what you need and we'll come back to you within a day.</p>
 
     <form id="enquireForm" style="margin-top:2.5rem;" onsubmit="handleSubmit(event)" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-      <div class="field">
-        <label>What are you enquiring about?</label>
-        <div class="radio-group" id="chipGroup">
-          <label class="radio-chip selected"><input type="radio" name="enquiry_type" value="Soft Play" checked>Soft Play Hire</label>
-          <label class="radio-chip"><input type="radio" name="enquiry_type" value="Travel Gear">Travel Gear Hire</label>
-          <label class="radio-chip"><input type="radio" name="enquiry_type" value="Both">Both</label>
-        </div>
-      </div>
       <div class="field"><label for="f-name">Name</label><input id="f-name" type="text" name="name" autocomplete="name" required placeholder="Your name"></div>
       <div class="field"><label for="f-email">Email</label><input id="f-email" type="email" name="email" autocomplete="email" required placeholder="you@email.com"></div>
       <div class="field"><label for="f-phone">Phone (optional)</label><input id="f-phone" type="tel" name="phone" autocomplete="tel" placeholder="04.."></div>
-      <div class="field"><label for="f-date">Event or travel date</label><input id="f-date" type="text" name="date" placeholder="e.g. 14 September"></div>
-      <div class="field"><label for="f-message">Tell us a little more</label><textarea id="f-message" name="message" rows="4" placeholder="Venue, indoor/outdoor, number of guests, travel details..."></textarea></div>
+      <div class="field"><label for="f-date">Event date</label><input id="f-date" type="text" name="date" placeholder="e.g. 14 September"></div>
+      <div class="field"><label for="f-message">Tell us a little more</label><textarea id="f-message" name="message" rows="4" placeholder="Venue, indoor or outdoor, number of children, anything else we should know..."></textarea></div>
       <!-- Honeypot: hidden from people, catches spam bots. Formspree respects the _gotcha field. -->
       <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;">
       <button type="submit" class="btn-primary" style="border:none;">Send enquiry</button>
@@ -568,7 +568,7 @@
     <p class="fnote" style="margin-top:0.6rem;">Perth Metro · Pickup, with delivery as a paid add-on</p>
     <!-- TODO: replace with your real business email once set up -->
     <p class="fnote" style="margin-top:0.4rem;">
-      <a href="mailto:hello@happylanding.com.au" style="border-bottom:1px solid var(--line);">hello@happylanding.com.au</a>
+      <a href="mailto:hello@happylanding.au" style="border-bottom:1px solid var(--line);">hello@happylanding.au</a>
     </p>
   </div>
   <p class="fnote">© <span id="year"></span> Happy Landing <span style="opacity:.35;">· v4</span></p>
@@ -576,7 +576,7 @@
 
 <script>
   /* ---- CHANGE THIS ONE LINE to switch the contact email everywhere ---- */
-  const CONTACT_EMAIL = 'hello@happylanding.com.au';
+  const CONTACT_EMAIL = 'hello@happylanding.au';
 
   const navPanel = document.getElementById('navlinks');
   const menuToggle = document.getElementById('menuToggle');
