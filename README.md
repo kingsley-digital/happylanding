@@ -2,7 +2,7 @@
 
 Premium soft play & ball pit hire, plus baby travel gear hire. Perth WA.
 
-**Live:** https://kingsley-digital.github.io/weston-kingsley-co/
+**Live:** https://kingsley-digital.github.io/happylanding/
 
 Single-file static site — no build step, no framework, no dependencies beyond Google Fonts. Edit `index.html` directly and commit; the live site updates within a minute.
 
